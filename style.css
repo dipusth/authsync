@@ -25,13 +25,22 @@ header{
 }
 /* Sidebar */
 .sidebar {
-  width: 300px;
+  width: 0;
+  transform: translateX(-300px);
   padding: 25px 30px;
   border-right: 1px solid #E6E7EB;
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.2s linear;
+    @media (min-width: 768px){
+        width: 300px;
+        transform: translateX(0);
+    }
+}
+.sidebar.toggle-sidebar{
+  display: none;
 }
 
 .sidebar h2 {

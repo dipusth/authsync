@@ -7,6 +7,16 @@
         display: flex;
     }
 }
+.flex-sm{
+     @media (min-width: 999px){
+        display: flex;
+    }
+}
+.flex-xs{
+     @media (min-width: 768px){
+        display: flex;
+    }
+}
 .justify-between{
     justify-content: space-between;
 }
