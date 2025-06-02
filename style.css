@@ -102,8 +102,8 @@ header{
 
 .flex > .card-block{
 flex-grow: 1;
-  .card:not(:first-child){
-    margin-top: 25px;
+  .card{
+    margin-bottom: 25px;
   }
 }
 /* user profile */
