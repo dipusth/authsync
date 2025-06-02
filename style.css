@@ -10,9 +10,6 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-.container {
-  height: 100vh;
-}
 
 header{
     margin-bottom: 25px;
@@ -24,6 +21,7 @@ header{
   padding: 20px;
   border-right: 1px solid #E6E7EB;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   justify-content: space-between;
 }
