@@ -1,5 +1,11 @@
 .flex{
     display: flex;
+    
+}
+.flex-md{
+     @media (min-width: 1199px){
+        display: flex;
+    }
 }
 .justify-between{
     justify-content: space-between;
@@ -105,7 +111,10 @@
 }
 
 .w-60{
-    width: 60%;
+    width: 100%;
+    @media (min-width: 1199px){
+      width: 60%;  
+    }
 }
 
 .icon-sm{

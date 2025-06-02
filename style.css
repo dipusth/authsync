@@ -105,7 +105,7 @@ span.icon{
   background-color: #fff;
 }
 
-.flex > .card-block{
+.flex > .card-block, .flex-md > .card-block{
 flex-grow: 1;
   .card{
     margin-bottom: 25px;
