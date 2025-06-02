@@ -1,14 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>index file
-        
-    </h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <aside class="sidebar">
+        <div class="t">
+          <div class="logo">
+            <img
+              src="./assets/authsync-logo.png"
+              alt="Auth Sync"
+              title="Auth Sync"
+            />
+          </div>
+          <nav>
+            <ul>
+              <li >
+                <a href="#" 
+                class="selected"
+                  ><span class="icon">
+                    <svg
+                      width="96"
+                      height="96"
+                      viewBox="0 0 96 96"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect width="96" height="96" fill="url(#pattern0_21_2)" />
+                      <defs>
+                        <pattern
+                          id="pattern0_21_2"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_21_2"
+                            transform="scale(0.0104167)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_21_2"
+                          width="96"
+                          height="96"
+                          preserveAspectRatio="none"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACNElEQVR4nO2dS27CQBBE+w45TUjIPUNyi5AVzj0iOAZmw6YjomGDIuEweF63XU/qHYyqumb808g2E0IIIYQQQgghhBBiOC9m9mZmWzM7mJlPvA7F68nzkpwoD2b2GaAhDte69KJ583cBzHuQ2rUOQTPf/lwJzY759IzzoNXknPAewKgHrdcWAWwDGPWg9d0igDlcavqN1bcI4JqIqeO0f1wADO4fFwCD+8cFwOD+cQEwuH9cAAzuHxcAg/vHBcDg/u8h4MnMuoE3dX357eIfGsccP30Ap+YcB4zjF3Uc2KSxx08fwNcNzfFSmwDjpw+gr2jQPsD46QO4tTmeZPzRyd4gVwAKoIrsM9S1AhRAFdlnqGsFKIAqss9Qn/sK0I0YHEA38qOCbuTx06+ARcXDsscA46cP4NykTXn2cm28ffntkOa0GH8SAWTGaf+4ABjcPy4ABvePC4DB/eMCYHD/uAAY3D8uAAb3jwuAwf3fQ4D2BYEBaF8QHID2BcEB6HE0HMC1/3vy8Ucne4NcASiAKrLPUNcKUABVZJ+hrhWgAKrIPkN97itAN2JwANoXBAegfUGV3OMYqH1BFeAnIRjcPy4ABvePC4DB/eMCYHD/uAAY3D8uAAb3jwuAwf3jAmBw/zXPcqZe+xYB6NXFxr66WC/vNvbl3csAS92D1rM1Yh3ArAerD2uIPmFi7CdMziFoJdjvzG/e/MtzwqpcAczhErUvXlctj/lCCCGEEEIIIYQQwtLzA2oQjQwPC6nBAAAAAElFTkSuQmCC"
+                        />
+                      </defs>
+                    </svg> </span
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon">
+                    <svg
+                      width="96"
+                      height="96"
+                      viewBox="0 0 96 96"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        width="96"
+                        height="96"
+                        fill="url(#pattern0_22_14)"
+                      />
+                      <defs>
+                        <pattern
+                          id="pattern0_22_14"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_22_14"
+                            transform="scale(0.0104167)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_22_14"
+                          width="96"
+                          height="96"
+                          preserveAspectRatio="none"
+                          xlink:href="data:image/png;base64,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"
+                        />
+                      </defs>
+                    </svg> </span
+                  >TOTP</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon">
+                    <svg
+                      width="96"
+                      height="96"
+                      viewBox="0 0 96 96"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect width="96" height="96" fill="url(#pattern0_21_4)" />
+                      <defs>
+                        <pattern
+                          id="pattern0_21_4"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_21_4"
+                            transform="scale(0.0104167)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_21_4"
+                          width="96"
+                          height="96"
+                          preserveAspectRatio="none"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5ElEQVR4nO2cW0tVQRTHf+Ale+zipbeihyyVIJI+Q0GPkS9ZIUF0JfoCvZaailIfwKBPYAZdHiurp1S60ENEb4WpRyEvuWNwDpwO6Oxzzj5n1p69frBAvM1/rf+e2TN79hlQFEVRFNm0Aj3AMPAU+AzMASs25uz3JoEh4CzQ4lt02tkNXAWmgA0gKjHM37wGrgC7fCeTJvYBA0CujKJvFeZ/9duepGxBPXATWEiw8MWxBNwBGtWF/zkIvKti4YvjLXBATdjkNDBfw+Ln4zdwioxzDlj1UPx8rAN9ZJSLZc5ukg6joZcMDjtrZQwZ4/aK7QaagQYbzfZ75mePyhjSTC88SYZuuKUUaNZeoU0ltGF+9zzwsYR2zGJuPxmYasad7SwDN4C6BKa2yzHbfFNhe+K5HbMQP4DjCbZ7FPgWs21jerAr3MUYBXgPtFWh/baYvW8h1BXzQIzkv1ep+Hn2xLwv3CXAB2uuZzvLwLEaaDliH0lsp2UxtAd412JcdddrqOdWDD2XCYipGFPNuhrqMbOjTw5NrwiE1hgr3l4Pui44NG3YBV7q6XEkOg/s9KCrKcaC8AwBMOxIctyjtscObfcJgElHkn0etV1yaJsgAL46kuz2qO2EQ9sXAuCXI8m9HrW1OLT9JABWHEk2etS2w6HtDwHgWvD4Rrq+4BOMhOsLPsFIuL7gE4yE6yuZw3YBMxPjqWOUgjA5TAODQDuCabAvxpa62R6lKNasEeZhnrjiu1a8IcUTaSYMCShKVOMwPUHMmB/ysBNtESbnQwggi1d/ZMPsc3tnRkAhIk9hZkfeSfKDFFHKwmzee8clMu1E0vMTLzD0/MQLDD0/8QJDz0+8wNDzEy8w9PzECww9P/ECQ89PvMDQ8xMvMPT8xAsMPT/xAkPPr9YCu4CRgj3nJfu1eQm4swrtqQEFb7E9AP46jh4YS/htOzWAzeK/jFGMfLxI0AQ1AHhYQvHzMaoGJHMP6HIMO9sNRx0JtJ/5HjBSRvGT/IRL5g2Y9bxnm3kDcp73bDNvwGIFBphzH9SACpnVIchvFx32/Ppg5oegTjulLGcaag7mUAMSYKwMA8z0NQky3wOwjxWel1D8Z/aV+SRQAwpMGHUMR+v2yk+q+AY1oIgOu8KdtmuEXMFHiJIY84tRAzyjBnhGDfCMGuAZNcAzaoBn1ADPqAGeUQM8owZ4Rg3wjBrgGfEGVLJnG6U8kthzrpgsH1XwAQEMCihE5CnuIYD2jB5XsyrluJqs9oJ+BFFvD7qOMhIT0o4swwoaDHw4WrNXvrjiF98TBgr2bKOUR87m0i9pzFcURVEURVEUhdTyD/VgOz6WzaUFAAAAAElFTkSuQmCC"
+                        />
+                      </defs>
+                    </svg> </span
+                  >Password</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon">
+                    <svg
+                      width="96"
+                      height="96"
+                      viewBox="0 0 96 96"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect width="96" height="96" fill="url(#pattern0_21_5)" />
+                      <defs>
+                        <pattern
+                          id="pattern0_21_5"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_21_5"
+                            transform="scale(0.0104167)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_21_5"
+                          width="96"
+                          height="96"
+                          preserveAspectRatio="none"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACxklEQVR4nO2dQW4TQRBF3wKWuQY4YsEWMOE4SEgsIdyBxPgACA6AhMQmIBHnEpAVuQIswMMiNqJQh45kIY1jnLGryvlPqqXHVfW7/8y4W24QQgghhBBCiO7ZBl4Ax0ADWPBogM/AAOhlHhDXgSEwDdBUWzKmVYhrJGz+hwANtI7ifTYRhgGaZh1HmQlpPD+z7VhLlJpukoBNHP1WY58EHAdolK0oytNReMYBGmUrih8k4KIiomPJ809fgCXPP30Bljz/9AVY8vzzF5AdCeCMBHBGAjgjAZyRAM5IAGckgDOZBegBu8ARcFLXh0t8AUbA0wxrAhkF2AbeAL8X/FX0ELhNULIJ8BCYLLlC9oyAZBJguETjw68VZxHgcQfNP49HBCKDALc63jgwibSJK4MA7y7w9pfAfWCrxg7wCvg153NvCUJ0AXpzcvtaG99GEeJby2fLE9QNAhBdgN05I39e8895MGcmPCEA0QUYteRVbGdRXrdc4yMBiC7ASUte/f+4xk7LNcobszvRBWha8io320XZarlG2RPlTnQBrKO8otYnAbzRDHBGAjgTUYB+ffz8uUB+l42mftc9p1rDCdBf8ufmy8YpcNeh3nACHDk03/XFLJoAjaMALu8F0QQw5whXcLR8TAKsFgmgGbBeZEHoHjCLLEgWtF5kQciCZpEFyYLWiywIWdAssiBZ0HqRBSELmkUWJAu62hbUaEHGV4CRowBakuTv7oRTh+aX77zjMODCWRB1d8Lhmv7PblxHvkvzowpwpZAAzkgAZySAMxLAGQngjARwRgI4k10AS55/+gIsef7pC7Dk+acvwJLnf3bIgW1ofCcBm3yEyScSMAjQKFtRPCcBvQ09xmqS4S8rN3kW7JGIcuzfQYCmWUdxkO0oQ2rCg+R2NK0jP13z/70n7NdD0DKcMTauue5l8nwhhBBCCCEEafgDosZMykEiDOwAAAAASUVORK5CYII="
+                        />
+                      </defs>
+                    </svg> </span
+                  >Vault</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon">
+                    <svg
+                      width="96"
+                      height="96"
+                      viewBox="0 0 96 96"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect width="96" height="96" fill="url(#pattern0_21_6)" />
+                      <defs>
+                        <pattern
+                          id="pattern0_21_6"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_21_6"
+                            transform="scale(0.0104167)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_21_6"
+                          width="96"
+                          height="96"
+                          preserveAspectRatio="none"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADpklEQVR4nO2cz0tVQRTHP5glGQRptkhDolYtg0Kh+ivCosBNm6A/oDKIFqUuKipKkf6EsMCiRX9BuKts0bKSILIWRailTAxMEELOfffdmTP3zvnAgQePmTvnfGfmzo/zHiiKoiiKoiiKoqTFNcC0aZPSTuQcfKMiyAffqAjywTdNFsFkbuKYzE0ck7mJYzI3cUzmJo7J3MQxmZs4JnNTFEVRFEVRFEURR3pjZHLfeEkHyKgA8kEyOgLkA2V0CmqmJY90gIwKIB8koyNAPlBGp6Bq5lQTeM6uuj5xpANkVAAVQBTpHmp0BKgAokj3UKMjQAUQRbqHGh0BKoAo0j3U6AhQAUSR7qFGR0C9BVgH5oEp4DxwAjgA9AFd1ADpHmpK1L8GzAGjwB5qTt0EGAcGaRB1E6BxqADCqADCqADCqADCpCTAu5I+bAGGgTFgFngLfAN+ObOfF9x3l4EhoINESEWAT8D+Ftu+z/2jymKJ530EJoABhElBgGXgcAtttrvcGWC1gmXvqttF95KxABdaaO8Z4GsFgd9oS8ApMhRgrmA7twIPAwR+o00DnWQiwM+CxwrdwPMIwf9rz9wzGy/AlYI9P2bw/xWhs8kCLAE7CtQXY9r5n9mXc2MFuFqgrrPCI9TaCIGRcHAV2F1gqVlmtVO1v1+AHgIi4eCTAvXMlJw2qvbX2n0CIuHgyQI73LKbrKr9tbYC9BOI2A7+BnZ66pgsGahQAhh3ExeE2A6+9JTvcOc0qQmw6A79Kie2gzc95YfbCFJIAawdJQCxHTznKT+WsACXCEBsB495yj9u8/ntstmzHzVBgEFP+YWEBXjdBAF6POV9m6/Q+DZltRdgm6e8b/0fGt9+oPYCdHnKqwCBBejzlNcpKLAABz3l9SUcWIDjnvKzuS1Dv5d4D5g2zObw13UjdpEA+IZ81fbA056hhAU4QgBuRxZgvqaHce9DZdMdcr84iSXAeoFftUwkKMANAnI38igY9bRnILELGZu5t5eA2NSPFxEFeFqgTVMJCXCPCFgR7rgbq9ACrBU4lOt1qSvSAnwGdhER+064BbwBfgQUYbxAW04nIIDv/rrxTEcYkaJTT+psKXBJE+o9FTVJN2W6Xa5mrODbjO3t0k6nRmcbK6NWpx3t+Zsw4m6mqg68Xe1k/8ItSo9LF1ypIPDLrtdHXWo2hX63nP1Q8mzneugdbi50uKQpm7djz+xt9oK9WbPHGdbs51fuO3ukbE81Sx2s/QHuDmbAvFDF2wAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                    </svg> </span
+                  >Trash</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon">
+                    <svg
+                      width="96"
+                      height="96"
+                      viewBox="0 0 96 96"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_21_7)">
+                        <path
+                          d="M76.56 51.76C76.72 50.56 76.8 49.32 76.8 48C76.8 46.72 76.72 45.44 76.52 44.24L84.64 37.92C85.36 37.36 85.56 36.28 85.12 35.48L77.44 22.2C76.96 21.32 75.96 21.04 75.08 21.32L65.52 25.16C63.52 23.64 61.4 22.36 59.04 21.4L57.6 11.24C57.44 10.28 56.64 9.59998 55.68 9.59998H40.32C39.36 9.59998 38.6 10.28 38.44 11.24L37 21.4C34.64 22.36 32.48 23.68 30.52 25.16L20.96 21.32C20.08 21 19.08 21.32 18.6 22.2L10.96 35.48C10.48 36.32 10.64 37.36 11.44 37.92L19.56 44.24C19.36 45.44 19.2 46.76 19.2 48C19.2 49.24 19.28 50.56 19.48 51.76L11.36 58.08C10.64 58.64 10.44 59.72 10.88 60.52L18.56 73.8C19.04 74.68 20.04 74.96 20.92 74.68L30.48 70.84C32.48 72.36 34.6 73.64 36.96 74.6L38.4 84.76C38.6 85.72 39.36 86.4 40.32 86.4H55.68C56.64 86.4 57.44 85.72 57.56 84.76L59 74.6C61.36 73.64 63.52 72.36 65.48 70.84L75.04 74.68C75.92 75 76.92 74.68 77.4 73.8L85.08 60.52C85.56 59.64 85.36 58.64 84.6 58.08L76.56 51.76ZM48 62.4C40.08 62.4 33.6 55.92 33.6 48C33.6 40.08 40.08 33.6 48 33.6C55.92 33.6 62.4 40.08 62.4 48C62.4 55.92 55.92 62.4 48 62.4Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_21_7">
+                          <rect width="96" height="96" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg> </span
+                  >Settings</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-profile flex item-center">
+          <img src="./assets/profile.png" alt="" />
+          <div class="">
+            <h6>Andrew Doe</h6>
+            <span>adnrew@gmail.com</span>
+          </div>
+        </div>
+      </aside>
+      <main class="main-content">
+        <header>
+          <h1>Dashboard</h1>
+          <span class="">Welcome Subash!</span>
+        </header>
+        <section>
+          <div class="card-block">
+            <h3 class="title text-3">TOPT</h3>
+            <div class="flex justify-between gap-20">
+              <div class="card">
+                <div class="flex justify-between">
+                  <div class="social-media">
+                    <h4>Google</h4>
+                    <span> example123@gmail.com </span>
+                  </div>
+                  <span class="three-dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </span>
+                </div>
+                <div class="flex justify-between item-center">
+                  <div class="otp-section">
+                    <span class="text-1 title">132456</span>
+
+                    <span class="copy"><i class="fa-regular fa-copy"></i></span>
+                  </div>
+                  <div class="loader"></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="flex justify-between">
+                  <div class="social-media">
+                    <h4>Facebook</h4>
+                    <span> facebook123@gmail.com </span>
+                  </div>
+                  <span class="three-dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </span>
+                </div>
+                <div class="flex justify-between item-center">
+                  <div class="otp-section">
+                    <span class="text-1 title">132456</span>
+
+                    <span class="copy"><i class="fa-regular fa-copy"></i></span>
+                  </div>
+                  <div class="loader"></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="flex justify-between">
+                  <div class="social-media">
+                    <h4>Instagram</h4>
+                    <span> instagram123@gmail.com </span>
+                  </div>
+                  <span class="three-dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </span>
+                </div>
+                <div class="flex justify-between item-center">
+                  <div class="otp-section">
+                    <span class="text-1 title">132456</span>
+
+                    <span class="copy"><i class="fa-regular fa-copy"></i></span>
+                  </div>
+                  <div class="loader"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex mt-20 gap-40">
+            <div class="card-block w-60">
+              <div class="flex justify-between">
+                <h3 class="title text-3">Pssword</h3>
+                <a href="#">View all</a>
+              </div>
+              <form action="" class="card-form">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th><input type="checkbox"><span>Items</span></th>
+                      <th>Owner</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox">
+                        <div class="floating-block">
+
+                          <div class="left"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                          </div>
+                          <div class="right ml-7">
+                            <span class="d-block">Google</span>
+                            <span class="d-block"><img class="icon-sm" src="https://img.icons8.com/?size=100&id=GDAPGbue9cDk&format=png&color=000000" alt=""></span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td><span class="tag tag-secodary">Me</span></td>
+                      <td>:</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"><span><i class="fa-regular fa-credit-card"></i></span>Bank 12</td>
+                       <td><span class="tag tag-secodary">John</span></td>
+                      <td>:</td>
+                    </tr>
+                  
+                    <tr>
+                      <td><input type="checkbox"><span><i class="fa-regular fa-clipboard"></i></span>Note Tilte</td>
+                      <td><span class="tag tag-secodary">Sung</span></td>
+                      <td>:</td>
+                    </tr>
+                      <tr>
+                      <td><input type="checkbox"><span><i class="fa-regular fa-credit-card"></i></span>Blank 23</td>
+                      <td><span class="tag tag-secodary">Celine</span></td>
+                      <td>:</td>
+                    </tr>
+                      <tr>
+                      <td><input type="checkbox">
+                        <div class="floating-block">
+
+                          <div class="left"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                          </div>
+                          <div class="right ml-7">
+                            <span class="d-block">Facebook</span>
+                            <span class="d-block">example123@gmail.com</span>
+                          </div>
+                        </div>
+                      </td>
+                       <td><span class="tag tag-primary">Me</span></td>
+                      <td>:</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <div class="card-block">
+              <div class="flex justify-between">
+                <h3 class="title text-3">Valut</h3>
+                <a href="#">View all</a>
+              </div>
+               <div class="card">
+                <div class="flex">
+                  <span class="icon icon-md mr-10"><img src="./assets/family.svg" alt=""></span>
+                  <div class="">
+                    <h4 class="title">Family</h4>
+                    <span class="d-block">Netflix, Amazon Prime</span>
+                    <span class="mt-20 d-inline-block tag tag-secodary">
+                      shared by John
+                    </span>
+                  </div>
+
+
+                </div>
+                
+               </div>
+                <div class="card">
+                <div class="flex">
+                  <span class="icon icon-md mr-10"><img src="./assets/family.svg" alt=""></span>
+                  <div class="">
+                    <h4 class="title">Office</h4>
+                    <span class="d-block">Netflix, Amazon Prime</span>
+                    <span class="mt-20 d-inline-block tag tag-secodary">
+                      shared by John
+                    </span>
+                  </div>
+
+
+                </div>
+                
+               </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
